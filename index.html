@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page GTA</title>
+    <link rel="shortcut icon" href="imagens\favicon.png" type="image/x-icon">
+    <!-- link para adicionar fontes -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/fontes.css">
+    <link href="https://fonts.cdnfonts.com/css/chalet" rel="stylesheet">
+    <link rel="stylesheet" href="./css/responsivo.css">
+</head>
+<body>
+    <header class="cabecalho"> 
+        <div class="logo">
+            <!-- tag div para fazer o agrupamento de vários elementos, como se fosse um guarda-chuva, é tipo o agrupar do canvas -->
+            <img src="./imagens/logo-rockstar.svg" alt="Logo Rockstar Games">
+            <hr>
+            <img src="./imagens/logo-gta.svg" alt="Loog GTA V">
+        </div>
+        <nav>
+            <!-- nav é a tag de navegação, você pode usar ele por exemplo para ao clicar em um botão o navegador vai para outra seção da página -->
+            <ul class="menu">
+                <!-- ul é uma tag para lista desordenada -->
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <!-- <li> é uma tag para listar o item -->
+                <li>
+                    <a href="#comprar">Comprar</a>
+                </li>
+                <li>
+                    <a href="https://support.rockstargames.com/categories/200013306" target="_blank">Suporte <img src="./imagens/icone-link.svg" alt="icone de link de suporte"></a>
+                    <!-- target="_blank" serve para abrir coisas em outra página, sem ele a página atual irá carregar o novo link -->
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="home" id="home">
+        <img class="imagem-fundo" src="./imagens/bg-main.png" alt="Imagem com rapaz de moletom laranja ao lado de um carro esportivo amarelo">
+        <div class="informacoes">
+            <div class="lista-de-jogos">
+                <img src="./imagens/logo-gta-v.svg" alt="Logo GTA V">
+                <img src="./imagens/logo-gta-online.svg" alt="Logo GTA Online">
+            </div>
+            <h1 class="titulo">Já disponíveis para Playstation 5 e Xbox Series X|S</h1>
+            <p class="texto">Experimente os fenômenos de entretenimento Grand Theft Auto V e GTA Online</p>
+            <a class="btn-comprar" href="#comprar">Compre já</a>
+            <!-- <a> é uma tag de âncora, usada para fazer botões -->
+        </div>
+    </main>
+    <section class="compre-ja" id="comprar">
+        <h2 class="titulo">Compre já</h2>
+        <div class="cartao">
+            <img class="capa-do-jogo" src="./imagens/gta5.jpg" alt="Capa do jogo GTA V">
+
+            <div class="informacoes">
+                <h3>Grand Theft Auto V</h3>
+                <p>
+                    Inclui <strong>modo história do GTA V</strong>
+                </p>
+                <ul class="plataformas">
+                    <li>
+                        <img src="./imagens/logo-ps5.svg" alt="pc playstation 5">
+                    </li>
+                    <li>
+                        <img src="./imagens/logo-ps4.svg" alt="pc playstation 4">
+                    </li>
+                    <li>
+                        <img src="./imagens/logo-pc.svg" alt="logo pc">
+                    </li>
+                    <li>
+                        <img src="./imagens/logo-xbox-one.svg" alt="logo xbox one">
+                    </li>
+                    <li>
+                        <img src="./imagens/logo-xbox-series-s.svg" alt="logo xbox series x">
+                    </li>
+                </ul>
+            </div>
+            <button class="btn-plataforma">
+                Selecione a plataforma
+
+                <ul class="plataformas">
+                    <li>
+                        <img src="./imagens/logo-ps5.svg" alt="pc playstation 5">
+                    </li>
+                    <li>
+                        <img src="./imagens/logo-ps4.svg" alt="pc playstation 4">
+                    </li>
+                    <li>
+                        <img src="./imagens/logo-pc.svg" alt="logo pc">
+                    </li>
+                    <li>
+                        <img src="./imagens/logo-xbox-one.svg" alt="logo xbox one">
+                    </li>
+                    <li>
+                        <img src="./imagens/logo-xbox-series-s.svg" alt="logo xbox series x">
+                    </li>
+                </ul>
+            </button>
+        </div>
+    </section>
+    <!-- O js fica por último para evitar problemas, como a leitura do código de cima para baixo, é necessário ler os materiais mais básicos antes de  ler o js  -->
+    <script src="./js/index.js"></script>
+</body>
+</html>
